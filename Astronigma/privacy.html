@@ -69,7 +69,7 @@
   </main>
 
   <footer>
-    <p id="footNote">© <span id="year"></span> Nikita Ivanov PR, Serbia. This page is provided for transparency. Third‑party privacy policies are linked within.</p>
+    <p id="footNote">© <span id="year"></span> Nikita Ivanov, Serbia. This page is provided for transparency. Third‑party privacy policies are linked within.</p>
   </footer>
 
   <script>
@@ -81,7 +81,7 @@
   const LINKS = {
     gameanalytics: 'https://gameanalytics.com/privacy',
     firebase: 'https://firebase.google.com/support/privacy',
-    applovin: 'https://www.applovin.com/privacy/',
+    appodeal: 'https://www.appodeal.com/privacy-policy/',
     googleReset: 'https://support.google.com/ads/answer/2662856',
     appleReset: 'https://support.apple.com/en-us/HT205223'
   };
@@ -94,19 +94,20 @@
     en: {
       _name: 'English',
       title: 'Privacy Policy – Astronigma: Star Logic Puzzle',
-      note: 'This policy reflects the current release plan: analytics via GameAnalytics & Firebase (GA4) and ads via AppLovin (interstitial, banner, rewarded). The Game collects only anonymous telemetry; no PII is intentionally collected.',
+      note: 'This policy reflects the current release plan: analytics via GameAnalytics & Firebase (GA4) and ads via Appodeal (interstitial, banner, rewarded). The Game collects only anonymous telemetry; no PII is intentionally collected. This document is provided for information only and is not legal advice.',
       toc: 'On this page',
       sections: {
         intro: {
           h: 'Who we are',
           p: [`<strong>Astronigma: Star Logic Puzzle</strong> (the “Game”) is developed and published by ${LEGAL_NAME}. This document explains what data the Game collects, how it is used, and your choices.`,
-              `Scope: mobile release with analytics (GameAnalytics & Firebase) and advertising (AppLovin).`]
+              `Scope: mobile release with analytics (GameAnalytics & Firebase) and advertising (Appodeal).`]
         },
         collect: {
           h: 'Data we collect',
           p: [
             '• Anonymous gameplay and device data (e.g., level events, board size, country/region, language, app version, platform).',
-            '• Advertising identifiers and signals for ad delivery and frequency capping (via AppLovin SDK).',
+            '• Advertising identifier (IDFA/AAID) and related signals for ad delivery and frequency capping (via Appodeal SDK).',
+            '• IP address and coarse location (e.g., country/region) transmitted with network requests for fraud prevention, security, analytics, and ad delivery.',
             '• Crash and performance data (via Firebase/GA4).',
             '<em>We do not intentionally collect data that directly identifies you (name, email, precise location).</em>'
           ]
@@ -115,7 +116,7 @@
         third: { h: 'Third‑party services', p: [
           `• <a href="${LINKS.gameanalytics}">GameAnalytics – Privacy Policy</a>`,
           `• <a href="${LINKS.firebase}">Google Firebase – Privacy & Security</a>`,
-          `• <a href="${LINKS.applovin}">AppLovin – Privacy Policy</a>`
+          `• <a href="${LINKS.appodeal}">Appodeal – Privacy Policy</a>`
         ]},
         ads: { h: 'Advertising', p: [
           'The Game shows interstitial and banner ads, and offers rewarded ads for extra moves/hearts as described in‑game.',
@@ -140,13 +141,13 @@
     es: {
       _name: 'Español',
       title: 'Política de Privacidad – Astronigma: Star Logic Puzzle',
-      note: 'Este juego usa GameAnalytics y Firebase (analíticas) y AppLovin (anuncios). Solo se recopilan datos anónimos; no recopilamos datos que te identifiquen directamente.',
+      note: 'Este juego usa GameAnalytics y Firebase (analíticas) y Appodeal (anuncios). Solo se recopilan datos anónimos; no recopilamos datos que te identifiquen directamente. Este documento es informativo y no constituye asesoramiento legal.',
       toc: 'Contenido',
       sections: {
-        intro:{h:'Quiénes somos',p:["Astronigma: Star Logic Puzzle es desarrollado y publicado por "+LEGAL_NAME+". Este documento describe qué datos se recopilan, cómo se usan y tus opciones.", 'Ámbito: lanzamiento móvil con analíticas (GameAnalytics, Firebase) y anuncios (AppLovin).']},
-        collect:{h:'Datos que recopilamos',p:['• Datos anónimos de juego y del dispositivo (eventos de nivel, idioma, país/región, versión, plataforma).','• Identificadores publicitarios para mostrar y limitar anuncios (SDK de AppLovin).','• Datos de fallos y rendimiento (Firebase/GA4).','<em>No recopilamos intencionalmente datos que te identifiquen directamente.</em>']},
+        intro:{h:'Quiénes somos',p:["Astronigma: Star Logic Puzzle es desarrollado y publicado por "+LEGAL_NAME+". Este documento describe qué datos se recopilan, cómo se usan y tus opciones.", 'Ámbito: lanzamiento móvil con analíticas (GameAnalytics, Firebase) y anuncios (Appodeal).']},
+        collect:{h:'Datos que recopilamos',p:['• Datos anónimos de juego y del dispositivo (eventos de nivel, idioma, país/región, versión, plataforma).','• Identificador publicitario (IDFA/AAID) y señales relacionadas para mostrar/limitar anuncios (SDK de Appodeal).','• Dirección IP y ubicación aproximada (p. ej., país/región) enviada con solicitudes de red para prevención de fraude, seguridad, analíticas y entrega de anuncios.','• Datos de fallos y rendimiento (Firebase/GA4).','<em>No recopilamos intencionalmente datos que te identifiquen directamente.</em>']},
         use:{h:'Cómo usamos los datos',p:['Mejorar el juego y su estabilidad.','Medir uso y retención.','Mostrar anuncios y evitar abusos.','Diagnosticar fallos y rendimiento.']},
-        third:{h:'Servicios de terceros',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Privacidad</a>`,`• <a href="${LINKS.firebase}">Google Firebase – Privacidad</a>`,`• <a href="${LINKS.applovin}">AppLovin – Privacidad</a>`]},
+        third:{h:'Servicios de terceros',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Privacidad</a>`,`• <a href="${LINKS.firebase}">Google Firebase – Privacidad</a>`,`• <a href="${LINKS.appodeal}">Appodeal – Privacidad</a>`]},
         ads:{h:'Publicidad',p:['El juego muestra anuncios intersticiales y de banner, y ofrece anuncios recompensados según se describe en el juego.','Los socios publicitarios pueden usar identificadores del dispositivo, sujetos a la configuración de tu plataforma y consentimiento.']},
         analytics:{h:'Analíticas',p:['Usamos datos agregados para entender el uso del juego. No incluyen identificadores directos.']},
         kids:{h:'Privacidad de menores',p:['El juego no está dirigido a menores de 13 años. Si crees que un menor proporcionó datos, contáctanos para solicitar su eliminación.']},
@@ -161,11 +162,11 @@
       }
     },
 
-    pt: { _name:'Português (Brasil)', title:'Política de Privacidade – Astronigma: Star Logic Puzzle', note:'Usamos GameAnalytics & Firebase (métricas) e AppLovin (anúncios). Coletamos apenas dados anônimos; nenhum dado pessoal identificável.', toc:'Nesta página', sections:{
+    pt: { _name:'Português (Brasil)', title:'Política de Privacidade – Astronigma: Star Logic Puzzle', note:'Usamos GameAnalytics & Firebase (métricas) e Appodeal (anúncios). Coletamos apenas dados anônimos; isto não é aconselhamento jurídico.', toc:'Nesta página', sections:{
       intro:{h:'Quem somos',p:[`Astronigma é desenvolvido e publicado por ${LEGAL_NAME}. Este documento explica os dados coletados, como são usados e suas escolhas.`,'Escopo: versão móvel com analíticas e publicidade.']},
-      collect:{h:'Dados coletados',p:['• Dados anônimos de jogo/dispositivo (eventos, idioma, país, versão, plataforma).','• Identificadores de publicidade para exibir/limitar anúncios (AppLovin).','• Dados de falhas e desempenho (Firebase/GA4).','<em>Não coletamos dados que identifiquem você diretamente.</em>']},
+      collect:{h:'Dados coletados',p:['• Dados anônimos de jogo/dispositivo (eventos, idioma, país, versão, plataforma).','• Identificador de publicidade (IDFA/AAID) e sinais correlatos para exibir/limitar anúncios (SDK Appodeal).','• Endereço IP e localização aproximada (ex.: país/região) enviados com requisições para prevenção de fraude, segurança, métricas e entrega de anúncios.','• Dados de falhas e desempenho (Firebase/GA4).','<em>Não coletamos dados que identifiquem você diretamente.</em>']},
       use:{h:'Como usamos',p:['Melhorar jogabilidade e estabilidade.','Medir uso e retenção.','Exibir anúncios e evitar abuso.','Diagnosticar falhas.']},
-      third:{h:'Serviços de terceiros',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Privacidade</a>`,`• <a href="${LINKS.firebase}">Firebase – Privacidade</a>`,`• <a href="${LINKS.applovin}">AppLovin – Privacidade</a>`]},
+      third:{h:'Serviços de terceiros',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Privacidade</a>`,`• <a href="${LINKS.firebase}">Firebase – Privacidade</a>`,`• <a href="${LINKS.appodeal}">Appodeal – Privacidade</a>`]},
       ads:{h:'Publicidade',p:['Anúncios intersticiais e banner; anúncios recompensados opcionais.','Parceiros podem usar identificadores do dispositivo conforme suas configurações.']},
       analytics:{h:'Métricas',p:['Usamos dados agregados sem identificadores diretos.']},
       kids:{h:'Crianças',p:['O jogo não é destinado a menores de 13 anos.']},
@@ -179,11 +180,11 @@
       contact:{h:'Contato',p:[`E-mail: <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    de: { _name:'Deutsch', title:'Datenschutzerklärung – Astronigma: Star Logic Puzzle', note:'Wir verwenden GameAnalytics & Firebase (Analyse) und AppLovin (Werbung). Es werden nur anonyme Daten erfasst; keine direkt personenbezogenen Daten.', toc:'Inhalt', sections:{
+    de: { _name:'Deutsch', title:'Datenschutzerklärung – Astronigma: Star Logic Puzzle', note:'Wir verwenden GameAnalytics & Firebase (Analyse) und Appodeal (Werbung). Es werden nur anonyme Daten erfasst; keine direkt personenbezogenen Daten. Dies ist keine Rechtsberatung.', toc:'Inhalt', sections:{
       intro:{h:'Wer wir sind',p:[`Astronigma wird von ${LEGAL_NAME} entwickelt und veröffentlicht. Dieses Dokument erläutert, welche Daten erhoben werden und wofür sie verwendet werden.`]},
-      collect:{h:'Welche Daten',p:['• Anonyme Spiel- und Gerätedaten (Ereignisse, Sprache, Land, Version, Plattform).','• Werbe-IDs und Signale (AppLovin).','• Absturz-/Leistungsdaten (Firebase/GA4).','<em>Keine bewusste Erhebung direkt personenbezogener Daten.</em>']},
+      collect:{h:'Welche Daten',p:['• Anonyme Spiel- und Gerätedaten (Ereignisse, Sprache, Land, Version, Plattform).','• Werbe-ID (IDFA/AAID) und zugehörige Signale (Appodeal).','• IP-Adresse und grober Standort (z. B. Land/Region) für Betrugsprävention, Sicherheit, Analyse und Anzeigenauslieferung.','• Absturz-/Leistungsdaten (Firebase/GA4).','<em>Keine bewusste Erhebung direkt personenbezogener Daten.</em>']},
       use:{h:'Zwecke',p:['Verbesserung von Gameplay und Stabilität.','Reichweiten-/Retention-Messung.','Werbeausspielung und Missbrauchsvermeidung.','Fehlerdiagnose.']},
-      third:{h:'Drittanbieter',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Datenschutz</a>`,`• <a href="${LINKS.firebase}">Firebase – Datenschutz</a>`,`• <a href="${LINKS.applovin}">AppLovin – Datenschutz</a>`]},
+      third:{h:'Drittanbieter',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Datenschutz</a>`,`• <a href="${LINKS.firebase}">Firebase – Datenschutz</a>`,`• <a href="${LINKS.appodeal}">Appodeal – Datenschutz</a>`]},
       ads:{h:'Werbung',p:['Interstitial- und Bannerwerbung; optional belohnte Anzeigen.']},
       analytics:{h:'Analyse',p:['Aggregierte Ereignisdaten ohne direkte Kennungen.']},
       kids:{h:'Kinder',p:['Nicht für Kinder unter 13 Jahren bestimmt.']},
@@ -197,11 +198,11 @@
       contact:{h:'Kontakt',p:[`E-Mail: <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    fr: { _name:'Français', title:'Politique de Confidentialité – Astronigma: Star Logic Puzzle', note:"Analytique via GameAnalytics & Firebase et publicités via AppLovin. Données anonymes uniquement.", toc:'Sommaire', sections:{
+    fr: { _name:'Français', title:'Politique de Confidentialité – Astronigma: Star Logic Puzzle', note:"Analytique via GameAnalytics & Firebase et publicités via Appodeal. Données anonymes uniquement. Ce document n’est pas un conseil juridique.", toc:'Sommaire', sections:{
       intro:{h:'Qui sommes-nous',p:[`Astronigma est développé et publié par ${LEGAL_NAME}. Ce document explique les données collectées et leur usage.`]},
-      collect:{h:'Données collectées',p:['• Données anonymes de jeu/appareil.','• Identifiants publicitaires (AppLovin).','• Données de crash/performance (Firebase/GA4).','<em>Pas de collecte intentionnelle de données identifiantes.</em>']},
+      collect:{h:'Données collectées',p:['• Données anonymes de jeu/appareil.','• Identifiant publicitaire (IDFA/AAID) et signaux associés (Appodeal).','• Adresse IP et localisation approximative (p. ex. pays/région) pour la prévention de la fraude, la sécurité, l’analyse et la diffusion des publicités.','• Données de crash/performance (Firebase/GA4).','<em>Pas de collecte intentionnelle de données identifiantes.</em>']},
       use:{h:'Utilisation',p:['Amélioration du jeu.','Mesure d’audience.','Diffusion d’annonces.','Diagnostic des pannes.']},
-      third:{h:'Tiers',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Confidentialité</a>`,`• <a href="${LINKS.firebase}">Firebase – Confidentialité</a>`,`• <a href="${LINKS.applovin}">AppLovin – Confidentialité</a>`]},
+      third:{h:'Tiers',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics – Confidentialité</a>`,`• <a href="${LINKS.firebase}">Firebase – Confidentialité</a>`,`• <a href="${LINKS.appodeal}">Appodeal – Confidentialité</a>`]},
       ads:{h:'Publicité',p:['Interstitiels, bannières et annonces récompensées.']},
       analytics:{h:'Analytique',p:['Données agrégées sans identifiants directs.']},
       kids:{h:'Enfants',p:['Non destiné aux moins de 13 ans.']},
@@ -215,11 +216,11 @@
       contact:{h:'Contact',p:[`Email : <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    ja:{ _name:'日本語', title:'プライバシーポリシー – Astronigma: Star Logic Puzzle', note:'GameAnalytics・Firebase による分析、AppLovin による広告。収集するのは匿名データのみです。', toc:'目次', sections:{
+    ja:{ _name:'日本語', title:'プライバシーポリシー – Astronigma: Star Logic Puzzle', note:'GameAnalytics・Firebase による分析、Appodeal による広告。収集するのは匿名データのみです。本書は法的助言ではありません。', toc:'目次', sections:{
       intro:{h:'運営主体',p:[`本ゲームは ${LEGAL_NAME} が開発・配信します。本書は収集データと利用目的を説明します。`]},
-      collect:{h:'収集するデータ',p:['・匿名のゲーム／デバイス情報','・広告配信のための識別子（AppLovin）','・クラッシュ／パフォーマンス情報（Firebase/GA4）','<em>氏名等の個人を直接特定する情報は取得しません。</em>']},
+      collect:{h:'収集するデータ',p:['・匿名のゲーム／デバイス情報','・広告識別子（IDFA/AAID）等（Appodeal）','・IP アドレスおよび概略位置（例：国／地域）は、不正対策・セキュリティ・分析・広告配信のために送信されます。','・クラッシュ／パフォーマンス情報（Firebase/GA4）','<em>氏名等の個人を直接特定する情報は取得しません。</em>']},
       use:{h:'利用目的',p:['ゲーム改善','利用状況の把握','広告配信・不正防止','不具合の解析']},
-      third:{h:'第三者サービス',p:[`・<a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`・<a href="${LINKS.firebase}">Firebase</a>`,`・<a href="${LINKS.applovin}">AppLovin</a>`]},
+      third:{h:'第三者サービス',p:[`・<a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`・<a href="${LINKS.firebase}">Firebase</a>`,`・<a href="${LINKS.appodeal}">Appodeal</a>`]},
       ads:{h:'広告',p:['インタースティシャル／バナー広告、リワード広告を表示します。']},
       analytics:{h:'分析',p:['集計データのみを利用します。']},
       kids:{h:'子どものプライバシー',p:['13歳未満を対象としていません。']},
@@ -233,11 +234,11 @@
       contact:{h:'連絡先',p:[`メール：<a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    ko:{ _name:'한국어', title:'개인정보 처리방침 – Astronigma: Star Logic Puzzle', note:'GameAnalytics/ Firebase 분석 및 AppLovin 광고 사용. 익명 데이터만 수집합니다.', toc:'목차', sections:{
+    ko:{ _name:'한국어', title:'개인정보 처리방침 – Astronigma: Star Logic Puzzle', note:'GameAnalytics/ Firebase 분석 및 Appodeal 광고 사용. 익명 데이터만 수집합니다. 본 문서는 법률 자문이 아닙니다.', toc:'목차', sections:{
       intro:{h:'회사 정보',p:[`본 게임은 ${LEGAL_NAME} 가 개발/배포합니다.`]},
-      collect:{h:'수집 항목',p:['• 익명 게임/기기 데이터','• 광고 식별자(AppLovin)','• 크래시/성능 데이터(Firebase/GA4)','<em>개인 식별 정보는 의도적으로 수집하지 않습니다.</em>']},
+      collect:{h:'수집 항목',p:['• 익명 게임/기기 데이터','• 광고 식별자(IDFA/AAID) 및 관련 신호(Appodeal)','• IP 주소 및 대략적 위치(예: 국가/지역): 부정 방지, 보안, 분석, 광고 게재 목적','• 크래시/성능 데이터(Firebase/GA4)','<em>개인 식별 정보는 의도적으로 수집하지 않습니다.</em>']},
       use:{h:'이용 목적',p:['게임 개선','이용 분석','광고 제공 및 오남용 방지','오류 진단']},
-      third:{h:'제3자 서비스',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.applovin}">AppLovin</a>`]},
+      third:{h:'제3자 서비스',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.appodeal}">Appodeal</a>`]},
       ads:{h:'광고',p:['전면/배너 및 리워드 광고를 표시합니다.']},
       analytics:{h:'분석',p:['집계 데이터만 사용합니다.']},
       kids:{h:'아동 보호',p:['13세 미만 대상 아님.']},
@@ -251,11 +252,11 @@
       contact:{h:'문의',p:[`이메일: <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    tr:{ _name:'Türkçe', title:'Gizlilik Politikası – Astronigma: Star Logic Puzzle', note:'GameAnalytics & Firebase analiz, AppLovin reklam. Yalnızca anonim veriler toplanır.', toc:'İçindekiler', sections:{
+    tr:{ _name:'Türkçe', title:'Gizlilik Politikası – Astronigma: Star Logic Puzzle', note:'GameAnalytics & Firebase analiz, Appodeal reklam. Yalnızca anonim veriler toplanır. Bu belge hukuki danışmanlık değildir.', toc:'İçindekiler', sections:{
       intro:{h:'Hakkımızda',p:[`Oyun ${LEGAL_NAME} tarafından geliştirilip yayımlanmaktadır.`]},
-      collect:{h:'Toplanan veriler',p:['• Anonim oyun/cihaz verileri','• Reklam tanımlayıcıları (AppLovin)','• Çökme/perf. verileri (Firebase/GA4)','<em>Doğrudan kimlik bilgisi toplamıyoruz.</em>']},
+      collect:{h:'Toplanan veriler',p:['• Anonim oyun/cihaz verileri','• Reklam tanımlayıcısı (IDFA/AAID) ve ilgili sinyaller (Appodeal)','• IP adresi ve yaklaşık konum (ör. ülke/bölge): dolandırıcılığı önleme, güvenlik, analitik ve reklam sunumu için','• Çökme/perf. verileri (Firebase/GA4)','<em>Doğrudan kimlik bilgisi toplamıyoruz.</em>']},
       use:{h:'Kullanım amaçları',p:['Oyun iyileştirme','Kullanım ölçümü','Reklam gösterimi','Hata analizi']},
-      third:{h:'Üçüncü taraflar',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.applovin}">AppLovin</a>`]},
+      third:{h:'Üçüncü taraflar',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.appodeal}">Appodeal</a>`]},
       ads:{h:'Reklamcılık',p:['Geçiş ve banner reklamlar; ödüllü reklamlar.']},
       analytics:{h:'Analitik',p:['Toplu olay verileri.']},
       kids:{h:'Çocukların gizliliği',p:['13 yaş altına yönelik değildir.']},
@@ -269,11 +270,11 @@
       contact:{h:'İletişim',p:[`E-posta: <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    th:{ _name:'ไทย', title:'นโยบายความเป็นส่วนตัว – Astronigma: Star Logic Puzzle', note:'ใช้ GameAnalytics และ Firebase (วิเคราะห์) และ AppLovin (โฆษณา) เก็บเฉพาะข้อมูลไม่ระบุตัวตน', toc:'สารบัญ', sections:{
+    th:{ _name:'ไทย', title:'นโยบายความเป็นส่วนตัว – Astronigma: Star Logic Puzzle', note:'ใช้ GameAnalytics และ Firebase (วิเคราะห์) และ Appodeal (โฆษณา) เก็บเฉพาะข้อมูลไม่ระบุตัวตน เอกสารนี้ไม่ใช่คำแนะนำทางกฎหมาย', toc:'สารบัญ', sections:{
       intro:{h:'ผู้ให้บริการ',p:[`พัฒนาและเผยแพร่โดย ${LEGAL_NAME}`]},
-      collect:{h:'ข้อมูลที่เก็บ',p:['• ข้อมูลการเล่น/อุปกรณ์แบบไม่ระบุตัวตน','• ตัวระบุโฆษณา (AppLovin)','• ข้อมูลแครช/ประสิทธิภาพ (Firebase/GA4)','<em>ไม่เก็บข้อมูลที่ระบุตัวตนโดยตรง</em>']},
+      collect:{h:'ข้อมูลที่เก็บ',p:['• ข้อมูลการเล่น/อุปกรณ์แบบไม่ระบุตัวตน','• ตัวระบุโฆษณา (IDFA/AAID) และสัญญาณที่เกี่ยวข้อง (Appodeal)','• ที่อยู่ IP และตำแหน่งโดยสังเขป (เช่น ประเทศ/ภูมิภาค) เพื่อการป้องกันการฉ้อโกง ความปลอดภัย การวิเคราะห์ และการแสดงโฆษณา','• ข้อมูลแครช/ประสิทธิภาพ (Firebase/GA4)','<em>ไม่เก็บข้อมูลที่ระบุตัวตนโดยตรง</em>']},
       use:{h:'การใช้งาน',p:['ปรับปรุงเกม','วัดการใช้งาน','แสดงโฆษณา','วิเคราะห์ข้อขัดข้อง']},
-      third:{h:'ผู้ให้บริการภายนอก',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.applovin}">AppLovin</a>`]},
+      third:{h:'ผู้ให้บริการภายนอก',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.appodeal}">Appodeal</a>`]},
       ads:{h:'โฆษณา',p:['โฆษณาแบบแทรกและแบนเนอร์ รวมถึงโฆษณาแบบรับรางวัล']},
       analytics:{h:'การวิเคราะห์',p:['ใช้ข้อมูลแบบรวมเท่านั้น']},
       kids:{h:'เด็กและเยาวชน',p:['ไม่ได้มุ่งเป้าไปที่อายุต่ำกว่า 13 ปี']},
@@ -287,11 +288,11 @@
       contact:{h:'ติดต่อ',p:[`อีเมล: <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    id:{ _name:'Bahasa Indonesia', title:'Kebijakan Privasi – Astronigma: Star Logic Puzzle', note:'Menggunakan GameAnalytics & Firebase (analitik) dan AppLovin (iklan). Hanya data anonim yang dikumpulkan.', toc:'Daftar isi', sections:{
+    id:{ _name:'Bahasa Indonesia', title:'Kebijakan Privasi – Astronigma: Star Logic Puzzle', note:'Menggunakan GameAnalytics & Firebase (analitik) dan Appodeal (iklan). Hanya data anonim yang dikumpulkan. Dokumen ini bukan nasihat hukum.', toc:'Daftar isi', sections:{
       intro:{h:'Tentang kami',p:[`Dikembangkan & diterbitkan oleh ${LEGAL_NAME}.`] },
-      collect:{h:'Data yang dikumpulkan',p:['• Data permainan/perangkat anonim','• ID iklan (AppLovin)','• Data crash/kinerja (Firebase/GA4)','<em>Tidak mengumpulkan data yang mengidentifikasi Anda secara langsung.</em>']},
+      collect:{h:'Data yang dikumpulkan',p:['• Data permainan/perangkat anonim','• ID iklan (IDFA/AAID) dan sinyal terkait (Appodeal)','• Alamat IP dan lokasi perkiraan (mis. negara/wilayah) untuk pencegahan penipuan, keamanan, analitik, dan penayangan iklan','• Data crash/kinerja (Firebase/GA4)','<em>Tidak mengumpulkan data yang mengidentifikasi Anda secara langsung.</em>']},
       use:{h:'Penggunaan',p:['Meningkatkan game','Mengukur penggunaan','Menayangkan iklan','Mendiagnosis gangguan']},
-      third:{h:'Layanan pihak ketiga',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.applovin}">AppLovin</a>`]},
+      third:{h:'Layanan pihak ketiga',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.appodeal}">Appodeal</a>`]},
       ads:{h:'Periklanan',p:['Iklan interstisial & banner, serta iklan berhadiah.']},
       analytics:{h:'Analitik',p:['Data peristiwa agregat.']},
       kids:{h:'Privasi anak',p:['Tidak ditujukan untuk anak di bawah 13 tahun.']},
@@ -305,11 +306,11 @@
       contact:{h:'Kontak',p:[`Surel: <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    ru:{ _name:'Русский', title:'Политика конфиденциальности – Astronigma: Star Logic Puzzle', note:'Используем GameAnalytics и Firebase для аналитики, AppLovin — для рекламы. Собираются лишь анонимные данные; PII не собираем.', toc:'Содержание', sections:{
+    ru:{ _name:'Русский', title:'Политика конфиденциальности – Astronigma: Star Logic Puzzle', note:'Используем GameAnalytics и Firebase для аналитики, Appodeal — для рекламы. Собираются лишь анонимные данные; PII не собираем. Этот документ не является юридической консультацией.', toc:'Содержание', sections:{
       intro:{h:'О нас',p:[`Игра разработана и издаётся ${LEGAL_NAME}. В документе описано, какие данные собираются и зачем.`]},
-      collect:{h:'Какие данные собираем',p:['• Анонимные игровые и технические события (уровни, язык, страна/регион, версия приложения, платформа).','• Рекламные идентификаторы и сигналы для показа/ограничения рекламы (SDK AppLovin).','• Данные о сбоях и производительности (Firebase/GA4).','<em>Мы не собираем данные, позволяющие напрямую вас идентифицировать.</em>']},
+      collect:{h:'Какие данные собираем',p:['• Анонимные игровые и технические события (уровни, язык, страна/регион, версия приложения, платформа).','• Рекламный идентификатор (IDFA/AAID) и связанные сигналы для показа/ограничения рекламы (SDK Appodeal).','• IP‑адрес и приблизительное местоположение (например, страна/регион) передаются с сетевыми запросами для предотвращения мошенничества, обеспечения безопасности, аналитики и показа рекламы.','• Данные о сбоях и производительности (Firebase/GA4).','<em>Мы не собираем данные, позволяющие напрямую вас идентифицировать.</em>']},
       use:{h:'Как используем',p:['Улучшение баланса и стабильности игры.','Измерение использования и удержания.','Показ рекламы (включая вознаграждаемую) и предотвращение злоупотреблений.','Диагностика сбоев.']},
-      third:{h:'Сторонние сервисы',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics — Политика</a>`,`• <a href="${LINKS.firebase}">Google Firebase — Конфиденциальность</a>`,`• <a href="${LINKS.applovin}">AppLovin — Политика</a>`]},
+      third:{h:'Сторонние сервисы',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics — Политика</a>`,`• <a href="${LINKS.firebase}">Google Firebase — Конфиденциальность</a>`,`• <a href="${LINKS.appodeal}">Appodeal — Политика</a>`]},
       ads:{h:'Реклама',p:['В игре показываются межстраничные и баннерные объявления, а также доступны вознаграждаемые объявления.']},
       analytics:{h:'Аналитика',p:['Используем агрегированные события без прямых идентификаторов.']},
       kids:{h:'Дети',p:['Игра не предназначена для лиц младше 13 лет.']},
@@ -323,11 +324,11 @@
       contact:{h:'Контакты',p:[`Почта: <a href="mailto:${CONTACT}">${CONTACT}</a>`]}
     }},
 
-    sr:{ _name:'Srpski (latinica)', title:'Politika privatnosti – Astronigma: Star Logic Puzzle', note:'Koristimo GameAnalytics i Firebase (analitika) i AppLovin (oglasi). Prikupljaju se samo anonimni podaci.', toc:'Sadržaj', sections:{
+    sr:{ _name:'Srpski (latinica)', title:'Politika privatnosti – Astronigma: Star Logic Puzzle', note:'Koristimo GameAnalytics i Firebase (analitika) i Appodeal (oglasi). Prikupljaju se samo anonimni podaci. Ovaj dokument nije pravni savet.', toc:'Sadržaj', sections:{
       intro:{h:'Ko smo',p:[`Igru razvija i objavljuje ${LEGAL_NAME}.`]},
-      collect:{h:'Koje podatke prikupljamo',p:['• Anonimni podaci o igri/uređaju (događaji, jezik, država, verzija, platforma).','• Oglašivački identifikatori (AppLovin).','• Podaci o padovima i performansama (Firebase/GA4).','<em>Ne prikupljamo podatke koji vas direktno identifikuju.</em>']},
+      collect:{h:'Koje podatke prikupljamo',p:['• Anonimni podaci o igri/uređaju (događaji, jezik, država, verzija, platforma).','• Oglašivački identifikator (IDFA/AAID) i povezani signali (Appodeal).','• IP adresa i približna lokacija (npr. država/region) – radi sprečavanja zloupotreba, bezbednosti, analitike i isporuke oglasa.','• Podaci o padovima i performansama (Firebase/GA4).','<em>Ne prikupljamo podatke koji vas direktno identifikuju.</em>']},
       use:{h:'Kako koristimo',p:['Unapređenje igre i stabilnosti.','Merenje korišćenja i zadržavanja.','Prikazivanje oglasa i sprečavanje zloupotreba.','Dijagnostika grešaka.']},
-      third:{h:'Treće strane',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.applovin}">AppLovin</a>`]},
+      third:{h:'Treće strane',p:[`• <a href="${LINKS.gameanalytics}">GameAnalytics</a>`,`• <a href="${LINKS.firebase}">Firebase</a>`,`• <a href="${LINKS.appodeal}">Appodeal</a>`]},
       ads:{h:'Oglasi',p:['Intersticijalni i baner oglasi; nagrađivani oglasi.']},
       analytics:{h:'Analitika',p:['Koristimo zbirne podatke bez direktnih identifikatora.']},
       kids:{h:'Deca',p:['Igra nije namenjena osobama mlađim od 13 godina.']},
